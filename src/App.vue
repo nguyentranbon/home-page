@@ -1,14 +1,30 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <component :is="layout">
+      <router-view />
+    </component>
   </div>
 </template>
 
-<style lang="scss">
+<script>
+import Default from '@/layouts/Default';
+export default {
+  data(){
+    return{
+      
+    }
+  },
+  computed:{
+    layout(){
+      return `${(this.$route.meta.layout || 'default')}`
+    }
+  },
+  components: {
+    Default
+  }
+}
+</script>
+<style lang="scss" src="@/css/main.scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
