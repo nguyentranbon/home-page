@@ -1,23 +1,17 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 // import Home from '../views/Home.vue'
-
+const Home = () => import(/* webpackChunkName: "vsf-home" */ '@/pages/Home.vue')
+const Marketplace = () => import(/* webpackChunkName: "vsf-home" */ '@/pages/Marketplace.vue')
+const Community = () => import(/* webpackChunkName: "vsf-home" */ '@/pages/Community.vue')
+const Auction = () => import(/* webpackChunkName: "vsf-home" */ '@/pages/Auction.vue')
 Vue.use(VueRouter)
 
-const routes = [
-  {
-    path: '/',
-    name: 'Home',
-    // component: Home
-  },
-  {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    // component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-  }
+let routes = [
+  {path: '/',name: 'Home', component: Home},
+  {path: '/marketplace',name: 'Marketplace', component: Marketplace},
+  {path: '/community',name: 'Community', component: Community},
+  {path: '/auction',name: 'Auction', component: Auction},
 ]
 
 const router = new VueRouter({

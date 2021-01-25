@@ -1,0 +1,19 @@
+$base-color: #E5E5E5;
+$gray-color: #C4C4C4;
+$yellow-color: #FDDB3A;
+
+body{
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    letter-spacing: -0.24px;
+    background-color: $base-color;
+}
+a{
+    color: #000000;
+}
+a:hover{
+    text-decoration: none;
+}
+

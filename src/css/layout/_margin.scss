@@ -1,0 +1,51 @@
+// Pixels
+$margin-px: 0 5 10 15 20 40;
+$margin-x-px: 0 5 10 15 20;
+$margin-y-px: 0 5 10 15 20;
+$margin-top-px: 0 5 10 15 20 25 30 35 40;
+$margin-bottom-px: 0 5 10 15 20 25 30 35 40;
+$margin-left-px: 0 5 10 15 20 25 30 35 40;
+$margin-right-px: 0 5 10 15 20 25 30 35 40;
+
+// Generators
+@mixin margin {
+    @each $i in $margin-px {
+        .m#{$i} {
+            margin: #{$i}px;
+        }
+    }
+    @each $i in $margin-x-px {
+        .mx#{$i} {
+          margin-left: #{$i}px;
+          margin-right: #{$i}px;
+        }
+    }
+    @each $i in $margin-y-px {
+        .my#{$i} {
+          margin-top: #{$i}px;
+          margin-bottom: #{$i}px;
+        }
+    }
+    @each $i in $margin-top-px {
+        .mt#{$i} {
+          margin-top: #{$i}px;
+        }
+    }
+    @each $i in $margin-bottom-px {
+        .mb#{$i} {
+          margin-bottom: #{$i}px;
+        }
+    }
+    @each $i in $margin-left-px {
+        .ml#{$i} {
+          margin-left: #{$i}px;
+        }
+    }
+    @each $i in $margin-right-px {
+        .mr#{$i} {
+          margin-right: #{$i}px;
+        }
+    }
+
+}
+@include margin;

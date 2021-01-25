@@ -2,9 +2,10 @@
   <header id="header">
     <div class="container">
         <nav class="position-relative">
-            <logo />
+            <logo width="auto" height="33px"/>
             <bell />
             <search />
+            <quick-links />
         </nav>
         
     </div>
@@ -15,13 +16,14 @@
 import Bell from '../../a/Bell.vue'
 import Logo from '../../a/Logo.vue'
 import Search from '../../m/Search.vue'
+import QuickLinks from '../../m/QuickLinks.vue'
 export default {
     components: {
-       Search,
+        Search,
         Logo ,
         Bell ,
+        QuickLinks
     },
-        
 
 }
 </script>

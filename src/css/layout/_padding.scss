@@ -1,0 +1,51 @@
+// Pixels
+$padding-px: 0 5 10 15 20 40;
+$padding-x-px: 0 5 10 15 20;
+$padding-y-px: 0 5 10 15 20;
+$padding-top-px: 0 5 10 15 20 25 30 35 40;
+$padding-bottom-px: 0 5 10 15 20 25 30 35 40;
+$padding-left-px: 0 5 10 15 20 25 30 35 40;
+$padding-right-px: 0 5 10 15 20 25 30 35 40;
+
+// Generators
+@mixin padding {
+    @each $i in $padding-px {
+        .m#{$i} {
+            padding: #{$i}px;
+        }
+    }
+    @each $i in $padding-x-px {
+        .mx#{$i} {
+          padding-left: #{$i}px;
+          padding-right: #{$i}px;
+        }
+    }
+    @each $i in $padding-y-px {
+        .my#{$i} {
+          padding-top: #{$i}px;
+          padding-bottom: #{$i}px;
+        }
+    }
+    @each $i in $padding-top-px {
+        .mt#{$i} {
+          padding-top: #{$i}px;
+        }
+    }
+    @each $i in $padding-bottom-px {
+        .mb#{$i} {
+          padding-bottom: #{$i}px;
+        }
+    }
+    @each $i in $padding-left-px {
+        .ml#{$i} {
+          padding-left: #{$i}px;
+        }
+    }
+    @each $i in $padding-right-px {
+        .mr#{$i} {
+          padding-right: #{$i}px;
+        }
+    }
+
+}
+@include padding;

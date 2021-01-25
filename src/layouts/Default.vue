@@ -2,6 +2,7 @@
     <div id="default-home">
         <div class="view-port">
             <header-main />
+            <slot />
         </div>
     </div>
 </template>
