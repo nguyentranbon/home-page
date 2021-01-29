@@ -1,7 +1,7 @@
 <template>
   <header id="header">
     <div class="container">
-        <nav class="position-relative">
+        <nav class="position-relative w-100">
             <logo width="auto" height="33px"/>
             <bell />
             <search />
@@ -13,17 +13,24 @@
 </template>
 
 <script>
-import Bell from '../../a/Bell.vue'
-import Logo from '../../a/Logo.vue'
-import Search from '../../m/Search.vue'
-import QuickLinks from '../../m/QuickLinks.vue'
+import Bell from '@/components/a/icon/Bell.vue'
+import Logo from '@/components/a/Logo.vue'
+import Search from '@/components/m/Search.vue'
+import QuickLinks from '@/components/m/QuickLinks.vue'
 export default {
+    data () {
+        return {
+        }
+    },
     components: {
         Search,
         Logo ,
         Bell ,
         QuickLinks
     },
+    mothods:{
+
+    }
 
 }
 </script>

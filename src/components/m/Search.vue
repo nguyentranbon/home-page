@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import IconSearch from '@/components/a/IconSearch'
+import IconSearch from '@/components/a/icon/IconSearch'
 export default {
     data(){
         return{

@@ -1,52 +1,51 @@
 <template>
-    <section class="slider-banner" 
-        slot-scope="{ goToIndex}">
+    <section class="slider-banner">
         <div
-        ref="draggableContainer"
-        class="vue-swipe-container">
-            <slider-slides >
-                <slider-slide
-                    v-for="slide in slides"
-                    :key="slide.id"
+            ref="draggableContainer"
+            class="vue-swipe-container">
+                <slider-slides >
+                    <div style="overflow: hidden; position: relative" :style="{ width:total +'px' }">
+                    <slider-slide
+                        v-for="(slide, index) in slides"
+                        :key="index"
+                        class="image-slide__slide"
+                        style="float: left;
+                                position: relative;
+                                transition-property: transform;
+                                transition-duration: 0ms;
+                                "
+                        :style="{width:windowWidth +'px'}"
+                        > 
+
+                        <a href="#">
+                            <img
+                                :src="slide.image"
+                                :alt="slide.headline"
+                                class="img-banner"
+                            >
+                        </a>
                     
-                    class="image-slide__slide"
-                >
-                    <img
-                        :src="slide.image"
-                        :alt="slide.headline"
-                        class="img-banner"
+                    </slider-slide>
+                    </div>
+                </slider-slides>
+
+
+                <ol class="image-slider__dots w-100">
+                    <li
+                        v-for="n in slides.length"
+                        :key="n"
+                        class="dot"
+                        @click="goToIndex(n - 1)"
+                        :class="{'is-active':n-1 == activeIndex}"
                     >
-                    
-                </slider-slide>
-            </slider-slides>
-            <!-- <button
-                class="image-slider__direction image-slider__direction--prev"
-                @click="prev"
-            >
-                &laquo; Prev
-
-            </button>
-            <button
-                class="image-slider__direction image-slider__direction--next"
-                @click="next"
-            >
-                Next &raquo;
-            </button> -->
-
-            <ol class="image-slider__dots w-100">
-                <li
-                    v-for="n in slides.length"
-                    :key="n"
-                    class="dot"
-                    @click="goToIndex(n - 1)"
-                    :class="{'is-active':n-1 == activeIndex}"
-                >
-                {{n}}
-                </li>
-            </ol>
-        </div>
-
+                    {{n}}
+                    </li>
+                </ol>
+                
+            </div>
+          <div>aaaaa: {{this.touch.startX}} bbbb  {{this.touch.endX}}</div>
     </section>
+    
 </template>
 
 <script>
@@ -59,8 +58,11 @@ export default {
             activeIndex: 0,
             touch: {
                 startX: 0,
-                endX: 0
-            }
+                endX: 0,
+            },
+            windowWidth: 0,
+            total: 0,
+            s : document.getElementsByClassName('slider-slide'),
         }
     },
     components: {
@@ -76,13 +78,17 @@ export default {
     methods:{
         goToIndex(index) {
             // Find out the direction we're moving
-            const direction = index > this.activeIndex ? `left` : `right`;
+            // const direction = index > this.activeIndex ? `left` : `right`;
             // Call methoad hide() method on the curently active `SliderSlider` component
-            this.slide[this.activeIndex].hide(direction);
+            // this.slide[this.activeIndex].hide(direction);
             // Call the `show()` method on the `SliderSlide`
             // component with the correspondign index.
-            this.slide[index].show(direction);
+            // this.slide[index].show(direction);
             this.activeIndex = index;
+            this.windowWidth = window.innerWidth,
+            this.total = this.windowWidth * this.slidesCount;
+            
+            
         },
         next() {
             this.goToIndex(this.nextIndex);
@@ -98,31 +104,45 @@ export default {
         },
         touchstart(event) {
             this.touch.startX = event.touches[0].clientX;
-            this.touch.endX = 0;
-            console.log(12)
+            this.touch.endX = this.windowWidth - this.touch.startX;
+            // document.document.querySelector('.slider-slide').style.transform = "rotate(20deg)";
+            document.querySelector('.slider-slide').style.transform = 'translate(' + this.touch.startX + 'px,0px)';
+            document.querySelector('.slider-slide').style.left =  '-'+ this.touch.endX+'px';
+            
         },
         touchmove(event) {
             this.touch.endX = event.touches[0].clientX;
-            this.$refs.draggableContainer.style.left = this.touch.endX;
-            console.log(11)
+            console.log("12",this.touch.endX);
+
         },
         touchend() {
-            if(!this.touch.endX || Math.abs(this.touch.endX - this.touch.startX) < 20)
-            return;
-            if(this.touch.endX < this.touch.startX)
-            this.next();
-            else
-            this.prev();
-            console.log(13)
-      }
+            // if(!this.touch.endX || Math.abs(this.touch.endX - this.touch.startX) < 20)
+            // return;
+            // if(this.touch.endX < this.touch.startX)
+            // this.next();
+            // else
+            // this.prev();
+
+        },
+        elementDrag: function (event) {
+            event.preventDefault();
+           
+        }
+
+
       
       
     },
     mounted() {
         this.TouchMove();
         this.goToIndex(this.activeIndex);
+        window.onresize = () => {
+            this.windowWidth = window.innerWidth,
+            this.total = this.windowWidth * this.slidesCount;
+        }
     },
     computed:{
+
         slide(){
             return this.$children.find(x => x.$options.name === `slider-list`).$children;
         },
@@ -152,23 +172,23 @@ export default {
     },
 
 
+
 }
 </script>
 
 <style lang="scss">
-$color-primary: color(primary);
-$color-tertiary: color(tertiary);
 .vue-swipe-container {
     position: relative;
-    overflow: hidden;
     z-index: 2;
-
-    .slider-slide{
-        float: left;
-        position: relative;
-        transition-property: transform;
-        transition-duration: 300ms;
-        left: 0;
+    overflow: hidden;
+    padding: 0px 0px 52.8%;
+    .slider-list{
+        position: absolute;
+    }
+    .img-banner{
+        display: inline-block;
+        vertical-align: middle;
+        min-width: 100%;
     }
 
     .image-slider__dots {
@@ -177,13 +197,14 @@ $color-tertiary: color(tertiary);
         justify-content: center;
         padding: 0;
         margin:0;
+        position: absolute;
+        bottom: 0;
     }
     
     .image-slider__dots li.dot{
         display: inline-block;
         width: 10px;
         height: 10px;
-        background: $color-tertiary;
         border-radius: 20px;
         margin: 2.5px;
         display: inline-block;

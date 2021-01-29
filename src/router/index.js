@@ -8,7 +8,7 @@ const Auction = () => import(/* webpackChunkName: "vsf-home" */ '@/pages/Auction
 Vue.use(VueRouter)
 
 let routes = [
-  {path: '/',name: 'Home', component: Home},
+  {path: '/',name: 'home', component: Home},
   {path: '/marketplace',name: 'Marketplace', component: Marketplace},
   {path: '/community',name: 'Community', component: Community},
   {path: '/auction',name: 'Auction', component: Auction},

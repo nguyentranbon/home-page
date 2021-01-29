@@ -1,11 +1,11 @@
 <template>
     <div id="home">
-        <banner-slider :slides='imageSlides' />
+        <!-- <banner-slider :slides='imageSlides' /> -->
     </div>
 </template>
 
 <script>
-import BannerSlider from '../components/templates/Slider.vue'
+// import BannerSlider from '../components/templates/Slider.vue'
 
 
 export default {
@@ -26,9 +26,10 @@ export default {
             ],
         }
     },
-    components: {
-        BannerSlider
-    }
+    mounted() {
+
+      this.EventBus.$emit("modal-show", "modal-signup");
+    },
 }
 </script>
 
