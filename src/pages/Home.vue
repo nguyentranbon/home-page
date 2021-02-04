@@ -1,12 +1,13 @@
 <template>
     <div id="home">
         <!-- <banner-slider :slides='imageSlides' /> -->
+        <login />
     </div>
 </template>
 
 <script>
 // import BannerSlider from '../components/templates/Slider.vue'
-
+import Login from '@/components/o/Auth/SignUp'
 
 export default {
     name: "ImagesSlider",
@@ -26,10 +27,13 @@ export default {
             ],
         }
     },
-    mounted() {
-
-      this.EventBus.$emit("modal-show", "modal-signup");
+    components:{
+        Login
     },
+    // mounted() {
+
+    //   this.$emit("modal-show", "modal-signup");
+    // },
 }
 </script>
 

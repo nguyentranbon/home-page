@@ -1,28 +1,30 @@
 <template>
     <div 
         class="seller-account"
+            data-testid="accountButton"
             @click.self="goToSellerAccount();showMenu = true;"
+            @keyup.enter="goToSellerAccount"
+            tabindex="0"
+            role="button"
             @mouseover="showMenu = true"
             @mouseout="showMenu = false"
-            role="button"
         >
         <button
             type="button"
-            class="border-0 bg-light">
+            class="border-0 bg-light"
+            data-target="#exampleModal">
             <icon-profile />
         </button>
-        <template :class="['dropdown-content bg-cl-primary align-left sans-serif lh20 weight-400', !showMenu ? 'dropdown-content__hidden' : '']">
-            <div>asdas</div>
-        </template>
+
     </div>
 </template>
 
 <script>
 import IconProfile from '@/components/a/icon/IconProfile'
-import SellerAccount from '@/maketplace/SellerAccount/SellerAccount.js'
+import SellerAccountIcon from '@/maketplace/SellerAccount/SellerAccountButton.js'
 export default {
     name: "SellerAccountIcon",
-    mixins: [SellerAccount],
+    mixins: [SellerAccountIcon],
     data(){
         return{
             showMenu: false,

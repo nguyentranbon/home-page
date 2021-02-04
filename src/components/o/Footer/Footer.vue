@@ -15,7 +15,7 @@
                     <icon-cat />
                 </div>
                 <div class="tab-bar-warp">
-                    <seller-account-icon />
+                     <account-icon />
                 </div>
             </div>
         </div>
@@ -28,7 +28,9 @@ import IconOrderedList from '@/components/a/icon/IconOrderedList'
 import IconHome from '@/components/a/icon/IconHome'
 import IconChat from '@/components/a/icon/IconChat'
 import IconCat from '@/components/a/icon/IconCat'
-import SellerAccountIcon from '@/components/o/Header/SellerAccountIcon'
+
+import AccountIcon from '@/components/o/Header/AccountIcon'
+
 
 
 export default {
@@ -42,16 +44,18 @@ export default {
         IconChat,
         IconCat,
         IconHome,
-        SellerAccountIcon,
+        AccountIcon
+
     },
     methods:{
-        goToSellerAccount () {
-            this.EventBus.$emit('modal-toggle', 'modal-seller-signup')
+        gotoAccount () {
+            this.$bus.$emit('modal-toggle', 'modal-signup')
         },
+
     },
     computed: {
         ...mapState({
-            isOpenLogin: state => state.signUp,
+            isOpenLogin: state => state.ui.signUp,
         }),
     },
 

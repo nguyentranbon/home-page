@@ -6,6 +6,8 @@ export default new Vuex.Store({
   state:{
     authElem: 'login',
     authSeller : 'login-seller',
+    current : 'login-seller',
+    overlay: false,
   },
   mutations: {
     setAuthElem (state, action) {
@@ -13,6 +15,9 @@ export default new Vuex.Store({
     },
     setAuthSeller (state, action) {
         state.authSeller = action
+    },
+    setOverlay (state, action) {
+      state.overlay = action === true
     },
   },
   actions: {

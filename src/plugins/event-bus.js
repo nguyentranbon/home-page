@@ -1,4 +1,12 @@
 import Vue from 'vue'
-const EventBus = new Vue()
+// EventBus Object
+const EventBus = new Vue();
+Object.defineProperties(Vue.prototype, {
+    $bus: {
+    get() {
+        return EventBus;
+    },
+    },
+});
 
 export { EventBus as default }
