@@ -5,6 +5,7 @@ const Home = () => import(/* webpackChunkName: "vsf-home" */ '@/pages/Home.vue')
 const Marketplace = () => import(/* webpackChunkName: "vsf-home" */ '@/pages/Marketplace.vue')
 const Community = () => import(/* webpackChunkName: "vsf-home" */ '@/pages/Community.vue')
 const Auction = () => import(/* webpackChunkName: "vsf-home" */ '@/pages/Auction.vue')
+const PageNotFound = () => import(/* webpackChunkName: "vsf-home" */ '@/pages/PageNotFound.vue')
 Vue.use(VueRouter)
 
 let routes = [
@@ -12,6 +13,7 @@ let routes = [
   {path: '/marketplace',name: 'Marketplace', component: Marketplace},
   {path: '/community',name: 'Community', component: Community},
   {path: '/auction',name: 'Auction', component: Auction},
+  {path: '*', name:'page-not-found', component: PageNotFound}
 ]
 
 const router = new VueRouter({

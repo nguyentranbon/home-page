@@ -11,6 +11,9 @@ import Login from '@/components/o/Auth/SignUp'
 
 export default {
     name: "ImagesSlider",
+    title () {
+        return `Home Page`
+    },
     data(){
         return{
             imageSlides: [
