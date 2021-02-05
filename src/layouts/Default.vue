@@ -5,10 +5,9 @@
             <header-main />
             <slot />
             <footer-main />
-
             <sign-up />
-  
         </div>
+        <back-to-top />
     </div>
 </template>
 
@@ -18,6 +17,8 @@ import HeaderMain from '../components/o/Header/Header'
 import FooterMain from '@/components/o/Footer/Footer'
 import SignUp from '@/components/o/Auth/SignUp.vue'
 import Overlay from '@/components/a/block/Overlay.vue'
+import BackToTop from '@/components/o/BackToTop'
+
 // import SellerSignUp from '@/components/o/Auth/SellerSignUp.vue'
 export default {
     data(){
@@ -36,6 +37,8 @@ export default {
         SignUp,
         Overlay,
         // SellerSignUp,
+        BackToTop
+
     }
 }
 </script>

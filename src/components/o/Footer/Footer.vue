@@ -20,6 +20,13 @@
                 </div>
             </div>
         </div>
+    <back-to-top bottom="80px" right="20px" visibleoffset="200">
+      <button type="button" class="back-to-top py10 px10">
+        <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+          <path d="M23.245 20l-11.245-14.374-11.219 14.374-.781-.619 12-15.381 12 15.391-.755.609z" fill="white" />
+        </svg>
+      </button>
+    </back-to-top>
     </footer>
 </template>
 
@@ -31,6 +38,7 @@ import IconChat from '@/components/a/icon/IconChat'
 import IconCat from '@/components/a/icon/IconCat'
 
 import AccountIcon from '@/components/o/Header/AccountIcon'
+import BackToTop from '@/components/o/BackToTop'
 
 
 
@@ -45,7 +53,9 @@ export default {
         IconChat,
         IconCat,
         IconHome,
-        AccountIcon
+        AccountIcon,
+        BackToTop,
+
 
     },
     methods:{
@@ -63,7 +73,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 footer{
     .footer-menu{
         box-shadow: 10px -1px 10px rgba(0, 0, 0, .075);
@@ -109,7 +119,10 @@ footer{
             // }
 
         }
-        
     }
+}
+button.back-to-top{
+    background:#FDDB3A;
+    border: 1px solid #f3cd0d;
 }
 </style>
