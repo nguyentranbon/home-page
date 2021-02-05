@@ -1,7 +1,7 @@
 <template>
     <header class="mk-header-login w-100">
         <div class="image-wrap">
-            <img src="@/assets/images/undraw_video_game.png" alt="undaw-video-game">
+            <!-- <img src="@/assets/images/undraw_video_game.png" alt="undaw-video-game"> -->
         </div>
     </header>
 </template>

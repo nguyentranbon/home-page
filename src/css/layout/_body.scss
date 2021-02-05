@@ -7,8 +7,10 @@ body{
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+    
     letter-spacing: -0.24px;
-    background-color: $base-color;
 }
 a{
     color: #000000;

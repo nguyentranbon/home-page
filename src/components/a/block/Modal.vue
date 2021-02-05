@@ -12,10 +12,8 @@
     <div class="login-main" :style="style">
         <div class="form-inner">
             <div class="banner">
-              <header-login />
-                <slot name="header" />
             </div>
-            <div class="modal-content">
+            <div class="modal-content" v-if="$slots.content">
                 <slot name="content" />
             </div>
         </div>
@@ -30,7 +28,7 @@
 
 
 <script>
-import HeaderLogin from '@/components/a/block/Login/HeaderLogin'
+import onEscapePress from '@/mixins/onEscapePress'
 import { disableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock'
 
 
@@ -53,11 +51,13 @@ export default {
         }
     },
     components:{
-      HeaderLogin
+
 
     },
     methods: {
         onHide (name) {
+          console.log('cc',name)
+          console.log('dd',this.name)
           return name === this.name ? this.toggle(false) : false
         },
         onShow (name) {
@@ -77,7 +77,10 @@ export default {
         },
         close () {
           this.toggle(false)
-        }
+        },
+        onEscapePress () {
+          this.close()
+        },
     },
     beforeMount () {
       this.$bus.$on('modal-toggle', this.onToggle)
@@ -89,6 +92,7 @@ export default {
       this.$bus.$off('modal-show', this.onShow)
       this.$bus.$off('modal-hide', this.onHide)
     },
+    mixins: [onEscapePress],
     props: {
       delay: {
         required: false,

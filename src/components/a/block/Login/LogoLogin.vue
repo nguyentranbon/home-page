@@ -1,10 +1,5 @@
 <template>
-    <img 
-        src="@/assets/images/undraw_video_game.png" 
-        alt="undraw-video-game"
-        :width="width"
-        :height="height"
-    >
+
 </template>
 
 <script>

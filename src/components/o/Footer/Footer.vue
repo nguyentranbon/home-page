@@ -1,5 +1,6 @@
 <template>
     <footer id="footer">
+        <div class="footer-spacing"></div>
         <div class="footer-menu fixed-bottom bg-white text-center w-100">
             <div class="wrapper">
                 <div class="tab-bar-warp">
@@ -66,6 +67,9 @@ export default {
 footer{
     .footer-menu{
         box-shadow: 10px -1px 10px rgba(0, 0, 0, .075);
+        height: 74px;
+    }
+    .footer-spacing{
         height: 74px;
     }
     .wrapper{

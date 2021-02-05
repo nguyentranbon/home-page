@@ -1,6 +1,5 @@
 <template>
-    <modal name="modal-signup">
-
+    <modal name="modal-signup" :width="620">
         <login v-if="activeElem === 'login'"/>
     </modal>
 </template>
