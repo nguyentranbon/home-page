@@ -1,5 +1,6 @@
 <template>
     <div id="home">
+        <head-image />
         <!-- <banner-slider :slides='imageSlides' /> -->
         <p>Lorem, ipsum dolorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impe
             orem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impe
@@ -20,6 +21,8 @@
 
 <script>
 // import BannerSlider from '../components/templates/Slider.vue'
+
+import HeadImage from '@/components/templates/blocks/MainSlider/HeadImage.vue'
 
 
 export default {
@@ -44,8 +47,8 @@ export default {
         }
     },
     components:{
-
-    },
+        HeadImage
+    }
 
 }
 </script>

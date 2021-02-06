@@ -6,6 +6,11 @@ import store from './store'
 
 import VueI18n from 'vue-i18n'
 import titleMixin from '@/mixins/titleMixin'
+import VueLazyload from 'vue-lazyload'
+
+Vue.use(VueLazyload)
+Vue.use(VueLazyload, { attempt: 2, preLoad: 1.5 })
+
 
 Vue.config.productionTip = false
 Vue.use(VueI18n)
