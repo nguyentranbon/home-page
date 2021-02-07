@@ -2,19 +2,7 @@
     <div id="home">
         <head-image />
         <!-- <banner-slider :slides='imageSlides' /> -->
-        <p>Lorem, ipsum dolorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impe
-            orem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impe
-            orem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impe
-            orem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impe
-            orem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impe
-            orem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impe
-            orem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impe
-            orem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impe
-            orem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impe
-            orem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impe
-            orem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impe
-            orem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impeorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impe
-            or sit amet consectetur adipisicing elit. Nesciunt voluptatibus autem consequatur suscipit explicabo veniam fugit eaque obcaecati quo commodi facilis, delectus corporis nostrum, dicta minus. Nam, impedit? Enim, explicabo</p>
+        <product-listing :products="products"/>
     </div>
     
 </template>
@@ -23,7 +11,7 @@
 // import BannerSlider from '../components/templates/Slider.vue'
 
 import HeadImage from '@/components/templates/blocks/MainSlider/HeadImage.vue'
-
+import ProductListing from '@/components/o/Product/ProductListing.vue'
 
 export default {
     name: "ImagesSlider",
@@ -32,22 +20,86 @@ export default {
     },
     data(){
         return{
-            imageSlides: [
-                {
-                    id: 1,
-                    headline: 'Lorem 0',
-                    image: require('@/assets/images/Rectangle.png'),
+            products: [
+            {
+                name: "Crewneck T-Shirt",
+                id: 53362,
+                price: 9.5,
+                color: "white",
+                size: "small",
+                gender: "men",
+                quantity: 10,
+                dateAdded: "Tue Mar 24 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
+                category: "Shirts",
+                details: {
+                material: "cotton",
+                fit: "regular",
+                maintenance: "machine wash",
+                additional: "Some colors feature different-colored yarns for a heathered effect."
                 },
-                {
-                    id: 2,
-                    headline: 'Lorem 1',
-                    image: require('@/assets/images/Rectangle-2.png'),
+                images: [
+                    require('@/assets/images/apple.png'),
+                    require('@/assets/images/apple.png'),
+                    require('@/assets/images/apple.png'),
+                ]
+            },
+            {
+                name: "Cardigan Sweater",
+                id: 53363,
+                price: 49.5,
+                color: "red",
+                size: "medium",
+                gender: "women",
+                quantity: 8,
+                dateAdded: "Mon Mar 23 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
+                category: "Sweaters",
+                details: {
+                material: "cotton",
+                fit: "regular",
+                maintenance: "machine wash cold, air dry",
+                additional: ""
                 },
-            ],
+                images: [
+                    require('@/assets/images/apple.png'),
+                    require('@/assets/images/apple.png'),
+                    require('@/assets/images/apple.png'),
+                    require('@/assets/images/apple.png'),
+                    require('@/assets/images/apple.png'),
+                ]
+            },
+            {
+                name: "Slim Fit Jeans",
+                id: 53364,
+                price: 29.5,
+                color: "navy",
+                size: {
+                waist: 32,
+                length: 32,
+                },
+                gender: "men",
+                quantity: 5,
+                dateAdded: "Wed Mar 25 2015 20:00:00 GMT-0400 (Eastern Daylight Time)",
+                category: "Pants",
+                details: {
+                material: "denim",
+                fit: "slim",
+                maintenance: "machine wash cold with like colors, air dry",
+                additional: ""
+                },
+                images: [
+                    require('@/assets/images/apple.png'),
+                    require('@/assets/images/apple.png'),
+                    require('@/assets/images/apple.png'),
+                    require('@/assets/images/apple.png'),
+                    require('@/assets/images/apple.png'),
+                ]
+            },
+            ]
         }
     },
     components:{
-        HeadImage
+        HeadImage,
+        ProductListing,
     }
 
 }
